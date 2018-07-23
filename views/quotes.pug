@@ -1,0 +1,10 @@
+doctype html
+html(lang='en')
+    head
+        title Quotes | Quoting Dojo
+    body
+        div.container
+            h1 Here are some awesome quotes!
+            - for(const quote of quotes)
+              p #{quote.name}
+              p #{quote.quote}

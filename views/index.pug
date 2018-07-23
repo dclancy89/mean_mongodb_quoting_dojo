@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+    head
+        title Quoting Dojo
+    body
+        div.container
+            h1 Welcome to Quoting Dojo
+            form(action="/quotes", method="post")
+                label(for="name") Your Name:
+                input(type="text", name="name", id="name")
+
+                label(for="quote") Your quote:
+                input(type="text", name="quote", id="quote")
+
+                input(type="submit", value="Add my quote!")
+                a(href="/quotes") Skip to quotes
+    
